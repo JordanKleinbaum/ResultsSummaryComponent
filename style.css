@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  font-family: Hanken Grotesk, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.everything {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lefthalf {
+  width: 300px;
+  height: 420px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.your {
+  opacity: 0.7;
+  font-size: 18px;
+  padding-top: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.middlePart {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.rating {
+  margin-top: 35px;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.of {
+  opacity: 0.5;
+}
+
+.great {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.you-scored {
+  opacity: 0.6;
+  width: 200px;
+  font-size: 14px;
+}
+
+/**/
+.righthalf {
+  width: 240px;
+  height: 360px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.summary {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.reactiondiv,
+.memorydiv,
+.verbaldiv,
+.visualdiv {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 17px;
+}
+
+.leftside {
+  display: flex;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  color: hsla(0, 100%, 67%, 0.8);
+  font-weight: 800;
+}
+
+.stats {
+  color: gray;
+}
+
+.darkernumber {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+
+.memorydiv {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory {
+  color: hsla(39, 100%, 56%, 0.7);
+}
+
+.verbaldiv {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal {
+  color: hsla(166, 100%, 37%, 0.7);
+}
+
+.visualdiv {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual {
+  color: hsla(234, 85%, 45%, 0.7);
+}
+
+.continue {
+  cursor: pointer;
+  background-color: rgb(76, 76, 224);
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 15px 30px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+@media (width <= 600px) {
+  .everything {
+    flex-direction: column;
+  }
+}
